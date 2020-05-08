@@ -1,6 +1,6 @@
 const discord = require('discord.js');
 const ytdl = require('ytdl-core');
-const ffmpeg = require('ffmpeg');
+const ffmpeg = require('./ffmpeg');
 
 const token = process.env.token;
 
