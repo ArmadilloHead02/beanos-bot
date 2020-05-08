@@ -23,7 +23,7 @@ client.on('message', (message) => {
     };
 
     if(message.content.startsWith(prefix + "help")) {
-        message.channel.send("List of Commands \n b!ping: Pings the bot \n b!hellothere: General Kenobi! \n b!geff: Sends an image of Geff \n b!geef: Sends an image of Geef \n b!invite: Generates an invite link for the bot \n b!beanos: Plays the beanos theme song \n b!play: Plays a YouTube link \n b!leave: Leaves the current Voice Channel");
+        message.channel.send("List of Commands \n b!ping: Pings the bot \n b!hellothere: General Kenobi! \n b!geff: Sends an image of Geff \n b!geef: Sends an image of Geef \n b!invite: Generates an invite link for the bot \n b!beanos: Plays the beanos theme song \n b!anthem: Plays Saleel al Sawarim \n b!play: Plays a YouTube link \n b!leave: Leaves the current Voice Channel");
     };
 
     if(message.content.startsWith(prefix + "hellothere")) {
