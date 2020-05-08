@@ -68,6 +68,21 @@ client.on('message', (message) => {
         message.reply("Playing beanos.mp3");
     };
 
+    // Music (saleel-al-sawarim.mp3)
+
+    if(message.content.startsWith(prefix + "anthem")) {
+        let voiceChannel = message.member.voice.channel;
+
+        if(!voiceChannel) return message.reply("Must be in a Voice Channel first");
+        voiceChannel.join()
+            .then(connection => {
+                const dispatcher = connection.play('./music/saleel-al-sawarim.mp3', {volume: 1});
+                dispatcher.on("end", end => {voiceChannel.leave()});
+            })
+            .catch(console.error);
+        message.reply("Playing saleel-al-sawarim.mp3");
+    };
+
     // Music (youtube)
 
     if(message.content.startsWith(prefix + "play")) {
